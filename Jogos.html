@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>GameBlog: O seu blog de jogos de vídeo games</title>
+    <style>
+        /* Estilos adicionais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+        }
+
+        header .logo span {
+            color: #FFD700; /* Cor do span */
+        }
+
+        nav.navbar {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav.navbar a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav.navbar a:hover {
+            color: #FFD700; /* Cor do hover */
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .posts {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .posts .postagem {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .posts .postagem h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .posts .postagem time {
+            color: #777;
+        }
+
+        .posts .postagem img {
+            margin-bottom: 10px;
+            border-radius: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .posts .postagem p {
+            line-height: 1.6;
+        }
+
+        .posts .postagem a {
+            text-decoration: none;
+            color: #FFD700; /* Cor do link */
+        }
+
+        .posts .postagem a:hover {
+            text-decoration: underline;
+        }
+
+        aside.area-lateral {
+            flex: 1;
+        }
+
+        .conteudo-lateral {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .conteudo-lateral h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .postagem-lateral p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .postagem-lateral a {
+            text-decoration: none;
+            color: #FFD700; /* Cor do link */
+        }
+
+        .postagem-lateral a:hover {
+            text-decoration: underline;
+        }
+
+        .categorias {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .categorias h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .categorias a {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #FFD700; /* Cor do link */
+        }
+
+        .categorias a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .posts {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .conteudo-lateral,
+            .categorias {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <h1>Game<span>Blog</span></h1>
+        </div>
+        <!-- Menu -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#dicas">Dicas</a>
+            <a href="#contato" class="split">Contato</a>
+        </nav>
+    </header>
+    <!-- Principal -->
+    <main>
+        <!-- Posts -->
+        <section class="posts">
+            <!-- Post 1 -->
+            <article class="postagem">
+                <h2>The Legend of Zelda: Breath of the Wild</h2>
+                <time datetime="2024-06-10">Postado 10 junho 2024</time>
+                <img src="assets/imagens/zelda.jpg" alt="Imagem do jogo The Legend of Zelda: Breath of the Wild">
+                <p>The Legend of Zelda: Breath of the Wild”, desenvolvido e publicado pela Nintendo, foi lançado em 2017 para Nintendo Switch e Wii U. Ele revolucionou a franquia Zelda com seu design de mundo aberto, oferecendo aos jogadores uma liberdade sem precedentes para explorar e interagir. com o mundo de Hyrule..</p>
+                <a href="#leia_mais">Leia mais</a>
+            </article>
+            <!-- Post 2 -->
+            <article class="postagem">
+                <h2>God of War</h2>
+                <time datetime="2024-06-08">Postado 08 junho 2024</time>
+                <img src="assets/imagens/godofwar.jpg" alt="Imagem do jogo God of War">
+                <p>"God of War" é uma série de jogos de vídeo game desenvolvida pela Santa Monica Studio e publicada pela Sony Interactive Entertainment. O enredo principal segue Kratos, um guerreiro espartano que inicialmente busca vingança contra os deuses gregos por sua traição, mas mais tarde se envolve em uma jornada de redenção e reconciliação com seu passado.
+
+                    No primeiro jogo, lançado em 2005 para o PlayStation 2, Kratos é enganado por Ares, o deus da guerra, e busca vingança ao longo de toda a Grécia antiga. Ele acaba matando Ares e tomando seu lugar como o novo deus da guerra..</p>
+                <a href="#leia_mais">Leia mais</a>
+            </article>
+        </section>
+        <!-- Área Lateral -->
+        <aside class="area-lateral">
+            <!-- Conteúdo Lateral -->
+            <div class="conteudo-lateral">
+                <h3>Postagens Recentes</h3>
+                <!-- Postagem Lateral 1 -->
+                <div class="postagem-lateral">
+                    <h4>Resident Evil Village</h4>
+                    <p>Resident Evil Village" é o oitavo título principal da famosa série de jogos de survival horror da Capcom. Ambientado em uma vila sombria e misteriosa na Europa rural, o jogo continua a história do protagonista Ethan Winters, que se vê em meio a uma trama sinistra envolvendo cultos, criaturas grotescas e segredos obscuros.</p>
+                    <a href="#leia_mais">Leia mais</a>
+                </div>
+                <!-- Postagem Lateral 2 -->
+                <div class="postagem-lateral">
+                    <h4>Cyberpunk 2077</h4>
+                    <p>Cyberpunk 2077", desenvolvido pela CD Projekt Red, é um jogo de RPG de ação ambientado em Night City, uma metrópole distópica e futurista onde a tecnologia avançada coexiste com a corrupção, o crime e a desigualdade social. O jogo foi altamente antecipado e recebeu uma quantidade significativa de atenção da mídia antes e após o lançamento.</p>
+                    <a href="#leia_mais">Leia mais</a>
+                </div>
+            </div>
+            <!-- Categorias -->
+            <div class="categorias">
+                <h3>Categorias</h3>
+                <a href="#noticias">Notícias</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#dicas">Dicas</a>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>Todos os Direitos reservados</p>
+    </footer>
+</body>
+
+</html>

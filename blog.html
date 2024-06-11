@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>TechBlog: O seu blog de tecnologia</title>
+    <style>
+        /* Estilos adicionais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+        }
+
+        header .logo span {
+            color: #FFD700; /* Cor do span */
+        }
+
+        nav.navbar {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav.navbar a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav.navbar a:hover {
+            color: #FFD700; /* Cor do hover */
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .posts {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .posts .postagem {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .posts .postagem h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .posts .postagem time {
+            color: #777;
+        }
+
+        .posts .postagem img {
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .posts .postagem p {
+            line-height: 1.6;
+        }
+
+        .posts .postagem a {
+            text-decoration: none;
+            color: #FFD700; /* Cor do link */
+        }
+
+        .posts .postagem a:hover {
+            text-decoration: underline;
+        }
+
+        aside.area-lateral {
+            flex: 1;
+        }
+
+        .conteudo-lateral {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .conteudo-lateral h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .postagem-lateral p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .postagem-lateral a {
+            text-decoration: none;
+            color: #FFD700; /* Cor do link */
+        }
+
+        .postagem-lateral a:hover {
+            text-decoration: underline;
+        }
+
+        .categorias {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .categorias h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .categorias a {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #FFD700; /* Cor do link */
+        }
+
+        .categorias a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .posts {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .conteudo-lateral,
+            .categorias {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <h1>Tec<span>blog</span></h1>
+        </div>
+        <!-- Menu -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#jogos">Jogos</a>
+            <a href="#celulares">Celulares</a>
+            <a href="#informatica">Informática</a>
+            <a href="#eletronicos">Eletrônicos</a>
+            <a href="#sobre" class="split">Sobre</a>
+        </nav>
+    </header>
+    <!-- Principal -->
+    <main>
+        <!-- Posts -->
+        <section class="posts">
+            <!-- Post 1 -->
+            <article class="postagem">
+                <h2>Post 1</h2>
+                <time datetime="2024-06-06">Postado 06 junho 2024</time>
+                <img width="180px" src="assets/imagens/imagem1.jpg" alt="Imagem do post 1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique a recusandae, itaque explicabo expedita corporis repudiandae sit est quos quidem, labore sequi sapiente deleniti amet eos deserunt quod tempore.</p>
+                <a href="#leia_mais">Leia mais</a>
+            </article>
+            <!-- Post 2 -->
+            <article class="postagem">
+                <h2>Post 2</h2>
+                <time datetime="2024-06-05">Postado 05 junho 2024</time>
+                <img width="180px" src="assets/imagens/imagem2.jpg" alt="Imagem do post 2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique a recusandae, itaque explicabo expedita corporis repudiandae sit est quos quidem, labore sequi sapiente deleniti amet eos deserunt quod tempore.</p>
+                <a href="#leia_mais">Leia mais</a>
+            </article>
+        </section>
+        <!-- Área Lateral -->
+        <aside class="area-lateral">
+            <!-- Conteúdo Lateral -->
+            <div class="conteudo-lateral">
+                <h3>Postagens Recentes</h3>
+                <!-- Postagem Lateral 1 -->
+               
